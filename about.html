@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 	
-    <title>QCS - Domain Name Registration</title>
+    <title>QCS - About QCS</title>
 	
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 				<div class="collapse navbar-collapse" id="navbarsExample04">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Domain Registration<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="domain.php">Domain Registration<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Server Hosting</a>
@@ -78,10 +78,9 @@
 							<div class="foredrop"></div>
 							<div class="container">
 								<div class="carousel-caption text-left">
-									<h1>Domain Name Registration</h1>
-									<p>Use the tool below to see if you are able to register your domain.</p>
-									<p> Your domain extension can indicate the nature of your site or the location of your business</p>
-									<p><a class="btn btn-lg btn-outline-light" href="#" role="button">Contact Us Now</a> </p>
+									<h1>About Quick Cloud Setup</h1>
+									<p>An online platform for young independent professionals to utilize their talent and to unlock their passion, globally.</p>
+									<p><a class="btn btn-lg btn-outline-light" href="contact1.html" role="button">Contact Us Now</a> </p>
 								</div>
 							</div>
 						</div>
@@ -89,108 +88,73 @@
 					</div>
 				</div>
 
-	
+		</section>
+						<div class="col-12  m-auto py-3">
+						
 
-		<!-- ======= FAQ Area Start ========= -->
-		<div id="privacy">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-							 <div class="wrapper">
-<br> <br>    
+							<h2><u>Our Story</u></h2>
+							<p>
+								The idea behind QCS started when the two founders were looking for side jobs to fulfill their passion during their free time. However, with no success in the search, the two founders decided to create a online platform dedicated for such needs. After months of putting all the pieces together, QCS was founded September 2021.  
+							</p>
+						</div>
 
+												<div class="col-12  m-auto py-1">
 
-        <h2>Check Domain Name Availability</h2>
-            <!--<div class="container"> -->
-                <form action="" method="GET">
-                    <input id="searchBar" class="searchbar" type="text" name="domain" placeholder="Search domain name..." value="<?php if(isset($_GET['domain'])){ echo $_GET['domain']; } ?>">
-                    <button type="submit" id="btnSearch" class="btn-search"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <?php
-                error_reporting(0);
-                if(isset($_GET['domain'])){
-                    $domain = $_GET['domain'];
-                    if ( gethostbyname($domain) != $domain ) {
-                        echo "<h3 class='fail'>Domain Already Registered!</h3>";
-                    }
-                    else {
-                        echo "<h3 class='success'>Hurry, your domain is available!, you can register it.</h3>";
-                    }
-                }
-            ?>
-        </div>
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/>
-        <style type="text/css">
-<!--            h2 {
-                font-size: 26px;
-                text-align: center;
-            }
-
-
-            h3 {font-size: 24px; }
-            h3.success {
-                color: #008000;
-                text-align: center;
-            }
-            h3.fail {
-                color: #ff0000;
-                text-align: center;
-            }
-
--->
-
-            .container {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-            .searchbar {
-                padding: 6px 10px;
-                width: 400px;
-                max-width: 100%;
-                border: none;
-                margin-top: 1px;
-                margin-right: 8px;
-                font-size: 1em;
-                border-bottom: #333 solid 2px;
-                transition: 0.3s;
-            }
-            .searchbar::placeholder {
-                font-size: 1em;
-            }
-            .searchbar:focus {
-                outline: none;
-            }
-            .btn-search {
-                cursor: pointer;
-                text-decoration: none !important;
-                font-size: 1.5em;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                background-color: transparent;
-                border: none;
-                outline: none;
-            }
-        </style>
 							
-			
+							<h2><u>Our Mission</u></h2>
+							<p>
+								To allow you to become who you are, what you are, and what your skill and passion enable you to be as a source of income.
+							</p>
+						</div>
+
+												<div class="col-12  m-auto py-3">
+
+							<h2><u>Our Values</u></h2>
+						</div>
+						<div class="col-12  m-auto py-1">
+
+							<h3><i>Preserve Local Community</i></h3>
+							<p>- Supporting local communities by creating more jobs locally and helping out people in need both locally and globally.
+								<br> - Supporting local cost by advertising volunteer events and raising awareness for charity</p>
+							
+							</div>
+													<div class="col-12  m-auto py-1">
+
+							<h3><i>Preserve The Environment</i></h3>
+							<p>Environmental friendly, encourage our artists and buyer for going electronic in terms of billing and commuting.</p>
+</div>
+						<div class="col-12  m-auto py-1">
+
+							<h3><i>Preserve Creativity / Innovation</i></h3>
+							
+							<p>Encourage creative minds to share the world their talent and empower individuals to pursue their dreams and a bright future.</p>
+							</div>
+													<div class="col-12  m-auto py-1">
+							<h3><i>Preserve Diversity</i></h3>
+
+							<p>Empower differences. What makes us different is what makes the world a better place.</p>
+</div>
+						<div class="col-12  m-auto py-1">
+
+							<h3><i>Preserve Integrity</i></h3>
+							<p>Committed to intellectual property and user privacy.</p>
+						</div>
+</div>
+			<
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+
 		
 		
-		<!-- Featured 3 -->
 		<div id="featured-3" class="mt-5 bg-light">
 			<div class="container">
 				<div class="col-12 bg-rocket m-auto py-5">
 				<a href="contact1.html"><h3>Contact Us Now!</h3></a>
-				<p class="mb-4">Let us register your a domain for you</p>
+				<p class="mb-4">Let us know where you are from</p>
 				<!--<form class="form-inline">
 				  <label class="sr-only" for="inlineFormInput">Email</label>
 				  <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="email@yourmail.com">
@@ -200,8 +164,7 @@
 					<input type="password" class="form-control" id="inlineFormInputGroup" placeholder="Message">
 				  </div>
 				  <button type="submit" class="btn btn-primary">Submit</button>
-				</form>-->
-				<a href="https://domains.google/intl/en_ca/" target="_blank"><button type="submit" class="btn btn-primary">Register Your Domain With Google</button></a>
+				</form> -->
 				</div>
 			</div>
 		</div>

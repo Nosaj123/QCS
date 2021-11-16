@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 	
-    <title>QCS - Domain Name Registration</title>
+    <title>QCS - Contact Us</title>
 	
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 				<div class="collapse navbar-collapse" id="navbarsExample04">
 					<ul class="navbar-nav ml-auto">
 						<li class="nav-item active">
-							<a class="nav-link" href="#">Domain Registration<span class="sr-only">(current)</span></a>
+							<a class="nav-link" href="domain.php">Domain Registration<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Server Hosting</a>
@@ -45,6 +45,7 @@
 								<a class="nav-link" href="ssl.html" aria-haspopup="true" aria-expanded="false">SSL</a>	
 								
 							</li>
+						
 						<li class="nav-item">
 							<a class="nav-link" href="contact1.html">Contact</a>
 						</li>
@@ -78,10 +79,9 @@
 							<div class="foredrop"></div>
 							<div class="container">
 								<div class="carousel-caption text-left">
-									<h1>Domain Name Registration</h1>
-									<p>Use the tool below to see if you are able to register your domain.</p>
-									<p> Your domain extension can indicate the nature of your site or the location of your business</p>
-									<p><a class="btn btn-lg btn-outline-light" href="#" role="button">Contact Us Now</a> </p>
+									<h1>Contact Us</h1>
+									<p>Use the tool below to submit your questions.</p>
+									<p><a class="btn btn-lg btn-outline-light" href="#contact" role="button">Contact Us Now</a> </p>
 								</div>
 							</div>
 						</div>
@@ -92,90 +92,81 @@
 	
 
 		<!-- ======= FAQ Area Start ========= -->
-		<div id="privacy">
+<div id="featured-3" class="mt-5 bg-light">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-							 <div class="wrapper">
-<br> <br>    
-
-
-        <h2>Check Domain Name Availability</h2>
-            <!--<div class="container"> -->
-                <form action="" method="GET">
-                    <input id="searchBar" class="searchbar" type="text" name="domain" placeholder="Search domain name..." value="<?php if(isset($_GET['domain'])){ echo $_GET['domain']; } ?>">
-                    <button type="submit" id="btnSearch" class="btn-search"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-            <?php
-                error_reporting(0);
-                if(isset($_GET['domain'])){
-                    $domain = $_GET['domain'];
-                    if ( gethostbyname($domain) != $domain ) {
-                        echo "<h3 class='fail'>Domain Already Registered!</h3>";
-                    }
-                    else {
-                        echo "<h3 class='success'>Hurry, your domain is available!, you can register it.</h3>";
-                    }
-                }
-            ?>
-        </div>
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"/>
-        <style type="text/css">
-<!--            h2 {
-                font-size: 26px;
-                text-align: center;
-            }
-
-
-            h3 {font-size: 24px; }
-            h3.success {
-                color: #008000;
-                text-align: center;
-            }
-            h3.fail {
-                color: #ff0000;
-                text-align: center;
-            }
-
--->
-
-            .container {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-                align-items: center;
-            }
-            .searchbar {
-                padding: 6px 10px;
-                width: 400px;
-                max-width: 100%;
-                border: none;
-                margin-top: 1px;
-                margin-right: 8px;
-                font-size: 1em;
-                border-bottom: #333 solid 2px;
-                transition: 0.3s;
-            }
-            .searchbar::placeholder {
-                font-size: 1em;
-            }
-            .searchbar:focus {
-                outline: none;
-            }
-            .btn-search {
-                cursor: pointer;
-                text-decoration: none !important;
-                font-size: 1.5em;
-                padding-top: 5px;
-                padding-bottom: 5px;
-                background-color: transparent;
-                border: none;
-                outline: none;
-            }
-        </style>
+				<div class="col-12 bg-rocket m-auto py-5">
 							
+							<h2> Contact Us</h2>
+<form action="https://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+<input name="skip_WhereToSend" type="hidden" value="contact@nosajsolomon.com" />
+<input name="skip_SnapHostID" type="hidden" value="XEGXKB4HEGJB" />
+<input name="skip_WhereToReturn" type="hidden" value="thankyou.html" />
+<input name="skip_Subject" type="hidden" value="QCS - Contact Us Form" />
+<input name="skip_ShowUsersIp" type="hidden" value="1" />
+<input name="skip_SendCopyToUser" type="hidden" value="1" />
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") {alert('A name is required.');frm.Name.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('An email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Opps...Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>Name:</b></td>
+<td><input name="Name" type="text" placeholder="Required" maxlength="60" style="width:350px;" /></td>
+</tr>
+<tr>
+<td><b>Email address:</b></td>
+<td><input name="FromEmailAddress" type="text" placeholder="Required" maxlength="60" style="width:350px;" /></td>
+</tr>
+<tr>
+<td><b>Phone number:</b></td>
+<td><input name="PhoneNumber" type="text" maxlength="13" placeholder="(Optional) - 555-555-5555" style="width:350px;" /></td>
+</tr><tr>
+	<tr>
+<td><b>Register A Domain:</b></td>
+<td><input name="Domain_Registration" type="text" placeholder="(Optional) - yourwebsitename.com" maxlength="60" style="width:350px;" /></td>
+</tr>
+<tr>
+<td><b>Product/Service:</b></td>
+<td><input name="Product" type="text" placeholder="(Optional) - Small/Medium/Large/Extra" maxlength="60" style="width:350px;" /></td>
+</tr>
+<td><b>Comments and questions:</b></td>
+<td><textarea name="Comments" rows="7" cols="40" placeholder="Required - Please let us know how we can help" style="width:350px;"></textarea></td>
+</tr><tr>
+<!--<td colspan="2" align="center"> <br />
+<table border="0" cellpadding="0" cellspacing="0"> -->
+<!-- Please check our ProCaptcha service which is ad-free:
+https://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+<!--<a href="http://www.snaphost.com/captcha/captchaguestbook.aspx" alt="how to make a guestbook" title="how to make a guestbook">
+how to make a guestbook</a></td></tr> -->
+
+
+
+<tr ><td> <b><i>Enter Web Form Code:</i></b>
+<input name="skip_CaptchaCode" type="text" style="width:100px;" maxlength="6" />
+</td><td>
+<a href="https://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+style="margin-left:20px;"
+src="https://www.SnapHost.com/captcha/CaptchaImage.aspx?id=XEGXKB4HEGJB&ImgType=2" /></a><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+</table> <br />
+<input name="skip_Submit" class="btn btn-primary" type="submit" value="Submit" />
+</td></tr>
+</table><br />
+</form>
 			
 						</div>
 					</div>
@@ -183,28 +174,10 @@
 			</div>
 		</div>
 
-		
-		
-		<!-- Featured 3 -->
-		<div id="featured-3" class="mt-5 bg-light">
-			<div class="container">
-				<div class="col-12 bg-rocket m-auto py-5">
-				<a href="contact1.html"><h3>Contact Us Now!</h3></a>
-				<p class="mb-4">Let us register your a domain for you</p>
-				<!--<form class="form-inline">
-				  <label class="sr-only" for="inlineFormInput">Email</label>
-				  <input type="email" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="email@yourmail.com">
 
-				  <label class="sr-only" for="inlineFormInputGroup">Message</label>
-				  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-					<input type="password" class="form-control" id="inlineFormInputGroup" placeholder="Message">
-				  </div>
-				  <button type="submit" class="btn btn-primary">Submit</button>
-				</form>-->
-				<a href="https://domains.google/intl/en_ca/" target="_blank"><button type="submit" class="btn btn-primary">Register Your Domain With Google</button></a>
-				</div>
-			</div>
-		</div>
+		
+		
+		
 		
     </main>
 	
