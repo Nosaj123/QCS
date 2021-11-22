@@ -1,8 +1,7 @@
-# web-hosting-template
-Web hosting template with Bootstrap 4 - Free
+# QuickCloudSetup.com
+This is v3
+Updated on Nov 22, 2021 at 7:00PM
+
 
 # Features
-Built with Bootstrap 4<br />
-CSS Animation table price<br />
-<a href="https://demo.kickbootstrap.com/hosting-pro">Demo</a><br />
-<a href="https://kickbootstrap.com/web-hosting-pro-template">Download</a>
+Visit https://quickcloudsetup.com/ for more information
